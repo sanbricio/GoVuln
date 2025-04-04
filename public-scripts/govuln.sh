@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Detect the real location of the script and the repository
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
 # Source colors.sh using the absolute path
-source "$SCRIPT_DIR/utils/colors.sh"
+source "$HOME/.local/bin/govuln/utils/colors.sh"
 
 VULN_FILE="$(pwd)/vuln_report.txt"
 
